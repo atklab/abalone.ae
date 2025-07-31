@@ -4,12 +4,12 @@
 wordpress_sites:
   abalone.ae:
     site_hosts:
-    - canonical: abalone.ae
+    - canonical: abaloneae.atklab.space
       redirects:
-      - www.abalone.ae
+      - www.abaloneae.atklab.space
     local_path: ../site
     branch: master
-    repo: git@github.com:example/example.com.git
+    repo: git@github.com:atklab/atklab/abalone.ae.git
     repo_subtree_path: site
     multisite:
       enabled: false
@@ -17,4 +17,8 @@ wordpress_sites:
       enabled: false
       provider: letsencrypt
     cache:
+      enabled: false
+      skip_cache_uri: /wp-admin/|/wp-json/|/xmlrpc.php|wp-.*.php|/feed/|index.php|sitemap(_index)?.xml|/store.*|/cart.*|/carrello.*|/my-account.*|/account.*|/checkout.*|/cassa.*|/prodotto.*|/addons.*
+      skip_cache_cookie: comment_author|wordpress_[a-f0-9]+|wp-postpass|wordpress_no_cache|wordpress_logged_in|woocommerce_cart_hash|woocommerce_items_in_cart|wp_woocommerce_session_
+    xmlrpc:
       enabled: false

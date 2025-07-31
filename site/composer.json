@@ -28,7 +28,11 @@
       "type": "composer",
       "url": "https://wpackagist.org",
       "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
-    }
+    },
+    {
+			"type": "composer",
+			"url": "https://depot.atklab.space/atk-packagist"
+		}
   ],
   "require": {
     "php": ">=8.1",
@@ -39,7 +43,8 @@
     "roots/bedrock-disallow-indexing": "^2.0",
     "roots/wordpress": "6.8.2",
     "roots/wp-config": "1.0.0",
-    "wpackagist-theme/twentytwentyfive": "^1.0"
+    "wpackagist-theme/twentytwentyfive": "^1.0",
+    "atklab/updraftplus": "2.24.3.26"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
