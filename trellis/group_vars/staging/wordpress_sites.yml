@@ -8,8 +8,8 @@ wordpress_sites:
       redirects:
       - www.abaloneae.atklab.space
     local_path: ../site
-    branch: master
-    repo: git@github.com:atklab/atklab/abalone.ae.git
+    branch: main
+    repo: git@github.com:atklab/abalone.ae.git
     repo_subtree_path: site
     multisite:
       enabled: false
